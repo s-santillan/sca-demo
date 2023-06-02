@@ -18,7 +18,7 @@ jobs:
     steps:
       # Fetch project source
       - uses: actions/checkout@v3
-      - run: semgrep ci --sca
+      - run: semgrep ci --supply-chain
         env:
           SEMGREP_APP_TOKEN: ${{ secrets.SEMGREP_APP_TOKEN }}
 
